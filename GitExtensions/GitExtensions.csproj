@@ -1,12 +1,10 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <Import Project="Project.Build.targets" />
   <Import Project="Project.Publish.targets" />
   <Import Project="Project.Loc.targets" />
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <UseWindowsForms>true</UseWindowsForms>
-    <UseWpf>true</UseWpf>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <RunAnalyzersDuringBuild>false</RunAnalyzersDuringBuild>
     <RunAnalyzersDuringLiveAnalysis>false</RunAnalyzersDuringLiveAnalysis>
@@ -40,8 +38,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="app.config" />
-    <None Include="app.manifest" />
     <None Remove="AutoCompleteRegexes.txt" />
     <EmbeddedResource Include="AutoCompleteRegexes.txt" />
   </ItemGroup>
